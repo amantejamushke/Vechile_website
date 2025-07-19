@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            scrollbar-width: none;
+        }
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(bgbro.png);
+            background-size: cover;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            margin-bottom: 150px;
+            box-shadow: 0 0 10px black;
+
+        }
+
+        .help2 {
+            background-color: grey;
+            color:white;
+        }
+
+        .help {
+            font-weight: 700;
+            font-size: 20px;
+            /* color:rgba(255, 255, 255, 0.653); */
+            color: black;
+            font-family: calibri;
+            padding: 10px;
+            /* position: fixed;
+            bottom: 300px;
+            left: 430px; */
+            /* border:2px solid black; */
+            /* background-color: white; */
+        }
+
+        .help {
+            font-size: 1.2rem;
+            font-weight: bold;
+            /* background: rgba(255, 255, 255, 0.2); */
+            Light transparent background backdrop-filter: blur(5px);
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            /* background: rgba(255, 255, 255, 0.5); */
+        }
+
+        .img1 {
+            width: 20vw;
+            height: auto;
+            margin-top: 60px;
+            background-color: antiquewhite border:1px solid black;
+            border-radius: 15px;
+            box-shadow:0 0 5px grey;
+
+        }
+
+        .img1:hover {
+            transition: 0.3 all ease;
+
+        }
+        .y{
+            color:rgb(212, 212, 161);
+        }
+        .extra1
+        {
+            width:100%;
+            height:30vh;
+            background-color: blueviolet;
+        }
+        .cont{
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light mx-2" href="#"><i
+                    class="fa-solid fa-car-burst mx-2"></i></i>PolicyPitStop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bolder" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light fw-bolder" aria-current="page"
+                            href="insurance.html">Compare Insurance 🔍 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bolder" href="display.php">Car Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light fw-bolder" aria-disabled="true">Contact 📞</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main d-flex justify-content-center align-items-center flex-column">
+        <div class="help  p-3 d-flex justify-content-center align-items-center flex-column gap-3">
+            <h2 class="text-light y fw-bolder ms-auto">Smart Choices, Secure Rides – Find Your<b class="text-success"> Perfect Car & Insurance </b> with Ease!</h2>
+            <a href="cars.html
+        " class="btn text-light fw-bolder help2">Explore Now</a>
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+        <div class="img1 border p-3">
+            <div class="d-flex justify-content-center align-items-center"><h5 class="fw-bolder text-success">Vehicle Insurance</h5></div>
+            <p>Flexible insurance plans designed to fit your budget, providing optimal coverage and peace of mind</p>
+            <div class=" d-flex flex-column justify-content-center align-items-center">
+                <img src="ins.png" width="100px">
+                <a href="insurance.html" class="btn btn-dark w-50 ">Explore</a>
+               </div>
+        </div>
+        <div class="img1 border p-3">
+            <div class="d-flex justify-content-center align-items-center"><h5 class="fw-bolder text-success">Rent Car</h5></div>
+            <p>Explore our complete car collection—find the perfect ride that matches your style and needs</p>
+            <div class=" d-flex flex-column justify-content-center align-items-center">
+                <img src="carlogo.png" width="100px">
+                <a href="rent.html
+                " class="btn btn-dark w-50">Explore</a>
+            </div>
+            <!-- <a href="display.php" class="btn btn-dark mt-4">Explore</a> -->
+        </div>
+        <div class="img1 border p-3">
+            <div class="d-flex justify-content-center align-items-center"><h5 class="fw-bolder text-success">Return the Car</h5></div>
+            <p>Click Easily return your car—update availability and complete the process in just one click! </p>
+            <div class=" d-flex flex-column justify-content-center   align-items-center">
+                <img src="return.png" width="80px">
+                <a href="return.html" class="btn btn-dark w-50 mt-3 ">Explore</a>
+            </div>
+           
+        </div>
+        <div class="img1 border p-3">
+            <div class="d-flex justify-content-center align-items-center"><h5 class="fw-bolder text-success">List Your Car For Rent</h5></div>
+            <p>Add your car to our collection—share your ride and connect with renters effortlessly! </p>
+            <div class=" d-flex flex-column justify-content-center align-items-center">
+                <img src="rent.png" width="90px">
+                <a href="addcar.html" class="btn btn-dark w-50 mt-2">Explore</a>
+               </div>
+           
+        </div>
+        
+        
+       
+        
+    </div>
+    <div class="container-fluid my-3 ">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="1.png" class="d-block w-100" alt="...">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="1.png" class="d-block w-100" alt="...">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="container my-5">
+        <div class="container my-5">
+            <div class="row align-items-center p-5 rounded-4 shadow-lg bg-white border">
+              <div class="col-md-7 pe-md-5">
+                <h2 class="text-success fw-bold mb-4">Drive with Confidence — Vehicle Insurance</h2>
+                <p class=" fs-5">
+                  Protect yourself on the road with flexible and affordable Vehicle Insurance plans. Tailored to fit your needs and budget, we ensure peace of mind, wherever you go.
+                </p>
+                <p class=" fs-5">
+                  From everyday commutes to weekend getaways, our coverage keeps you safe with easy claims and 24/7 support.
+                </p>
+                <a href="insurance.html" class="btn btn-dark btn-lg mt-3 px-4">Explore Plans</a>
+              </div>
+              <div class="col-md-5 text-center mt-4 mt-md-0">
+                <img src="ins.png" alt="Vehicle Insurance" class="img-fluid rounded-3 shadow-sm" style="max-width: 320px;">
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <div class="container my-5">
+            <div class="row align-items-center p-5 rounded-4 shadow-lg bg-white border">
+              <div class="col-md-7 pe-md-5">
+                <h2 class="text-success fw-bold mb-4">Find the Perfect Ride — Anytime, Anywhere</h2>
+                <p class=" fs-5">
+                  Whether you're planning a weekend getaway or need a ride for daily use, our diverse car collection has something for everyone. 
+                  From compact city cars to luxury SUVs, choose the vehicle that fits your vibe.
+                </p>
+                <p class=" fs-5">
+                  Renting a car is just a few clicks away. Filter by price, model, or category — and drive off in style, comfort, and confidence.
+                </p>
+                <a href="rent.html" class="btn btn-dark btn-lg mt-3 px-4">Explore Cars</a>
+              </div>
+              <div class="col-md-5 text-center mt-4 mt-md-0">
+                <img src="carlogo.png" alt="Rent a Car" class="img-fluid rounded-3 shadow-sm" style="max-width: 320px;">
+              </div>
+            </div>
+          </div>
+          <div class="container my-5">
+            <div class="row align-items-center p-5 rounded-4 shadow-lg bg-white border">
+              <div class="col-md-7 pe-md-5">
+                <h2 class="text-success fw-bold mb-4">Return Your Ride — Hassle-Free & Quick</h2>
+                <p class=" fs-5">
+                  Ending your trip? We've made car returns seamless. Just head to the return page, confirm your details, and you're done in seconds.
+                </p>
+                <p class=" fs-5">
+                  No queues, no stress — update availability instantly so others can book it next. It’s all smooth, transparent, and efficient.
+                </p>
+                <a href="return.html" class="btn btn-dark btn-lg mt-3 px-4">Return Now</a>
+              </div>
+              <div class="col-md-5 text-center mt-4 mt-md-0">
+                <img src="return.png" alt="Return Car" class="img-fluid rounded-3 shadow-sm" style="max-width: 280px;">
+              </div>
+            </div>
+          </div>
+          <div class="container my-5">
+            <div class="row align-items-center p-5 rounded-4 shadow-lg bg-white border">
+              <div class="col-md-7 pe-md-5">
+                <h2 class="text-success fw-bold mb-4">Earn with Ease — List Your Car for Rent</h2>
+                <p class=" fs-5">
+                  Got a vehicle sitting idle? Put it to work! Share your car on our platform and start earning from day one.
+                </p>
+                <p class=" fs-5">
+                  Set your price, availability, and preferences — we’ll take care of the visibility and help you connect with trusted renters quickly.
+                </p>
+                <a href="addcar.html" class="btn btn-dark btn-lg mt-3 px-4">List Your Car</a>
+              </div>
+              <div class="col-md-5 text-center mt-4 mt-md-0">
+                <img src="rent.png" alt="List Car" class="img-fluid rounded-3 shadow-sm" style="max-width: 300px;">
+              </div>
+            </div>
+          </div>
+                              
+          
+      
+    <div class="cont my-5 p-5 bg-light rounded shadow">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark ">Why Choose Us?</h2>
+            <p class="text-muted">We're more than just a ride—your trusted travel companion.</p>
+        </div>
+        <div class="d-flex gap-3 text-center ">
+            <div class="col-md-4 mb-4 border rounded p-2 shadow-sm">
+                <h5 class="fw-semibold text-success">Safe & Secure</h5>
+                <p>Every ride is monitored for your safety, with built-in tracking and support features for a worry-free journey.</p>
+            </div>
+            <div class="col-md-4 mb-4 border rounded p-2 shadow-sm">
+                <h5 class="fw-semibold text-success">Affordable Pricing</h5>
+                <p>Whether you're renting or insuring, our pricing plans are tailored to fit your budget without compromising quality.</p>
+            </div>
+            <div class="col-md-4 mb-4 border rounded p-2 shadow-sm">
+                <h5 class="fw-semibold text-success">Trusted by Thousands</h5>
+                <p>Join a growing community of satisfied drivers and renters who trust us for hassle-free vehicle services every day.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark p-3 mt-5">
+        <div class="d-flex justify-content-evenly align-items-center">
+            <div class="more">
+                <h4 class="text-light">About Us</h4>
+                <ul>
+                    <li><a href="#" class="text-info">Our Story</a></li>
+                    <li><a href="#" class="text-info">How It Works</a></li>
+                    <li><a href="#" class="text-info">Testimonials</a></li>
+                    <li><a href="#" class="text-info">Privacy Policy</a></li>
+                    <li><a href="#" class="text-info">Terms & Conditions</a></li>
+                </ul>
+            </div>
+    
+            <div class="more p-3">
+                <h4 class="text-light">Connect with Us</h4>
+                <ul>
+                    <li><a href="#" class="text-info">Facebook</a></li>
+                    <li><a href="#" class="text-info">Twitter</a></li>
+                    <li><a href="#" class="text-info">Instagram</a></li>
+                    <li><a href="#" class="text-info">YouTube</a></li>
+                    <li><a href="#" class="text-info">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div class="more p-3">
+                <h4 class="text-light">Car Rental Services</h4>
+                <ul>
+                    <li><a href="#" class="text-info">Browse Cars</a></li>
+                    <li><a href="#" class="text-info">List Your Car</a></li>
+                    <li><a href="#" class="text-info">Rental Plans</a></li>
+                    <li><a href="#" class="text-info">Insurance & Safety</a></li>
+                    <li><a href="#" class="text-info">24/7 Support</a></li>
+                </ul>
+            </div>
+    
+            <div class="more p-3">
+                <h4 class="text-light">Need Help?</h4>
+                <ul>
+                    <li><a href="#" class="text-info">FAQs</a></li>
+                    <li><a href="#" class="text-info">Customer Support</a></li>
+                    <li><a href="#" class="text-info">Booking Assistance</a></li>
+                    <li><a href="#" class="text-info">Refund Policy</a></li>
+                    <li><a href="#" class="text-info">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="text-center mt-3">
+            <p class="text-light">&copy; 2025 CarRental Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

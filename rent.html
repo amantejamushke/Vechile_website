@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #f8f9fa;
+        }
+        .fc{
+            background: #212529;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .f1 {
+            margin-bottom: 15px;
+        }
+        .f1 label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .f1 input,
+        .f1 select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #6c757d;
+            border-radius: 5px;
+            background: #343a40;
+            color: #f8f9fa;
+        }
+        .help {
+            background-color: #28a745;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .help:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center my-5">
+        <div class="fc ">
+            <h4 class="text-center mb-2">Add Car Details</h4>
+            <form action="rent.php" method="post">
+                <div class="f1">
+                    <label>Customer Name</label>
+                    <input type="text" name="customername" required>
+                </div>
+                
+                <div class="f1">
+                    <label>Email</label>
+                    <input type="email" name="mobilenumber" required>
+                </div>
+                
+                <div class="f1">
+                    <label>Rental Date</label>
+                    <input type="date" name="rentaldate" required>
+                </div>
+                <div class="f1">
+                    <label>Return Date</label>
+                    <input type="date" name="returndate" required>
+                </div>
+                <button type="submit" class="btn btn-success help">Next</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Car</title>
+    <style>
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px grey;
+        }
+        .head{
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .h1{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            border-radius: 15px;
+        }
+
+        .h2 {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            width:100%;
+            margin-left:8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .h2:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="return.php" method="get">
+        <h2 class="head">Return the Car</h2>
+        <input type="number" class="h1" name="id" placeholder="Enter your Car ID" required>
+        <input type="submit" class="h2" value="Submit">
+    </form>
+</body>
+</html>
