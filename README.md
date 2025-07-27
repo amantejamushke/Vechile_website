@@ -1,61 +1,77 @@
-Artisana - Handmade Goods Marketplace
-A complete e-commerce platform for artisans to showcase and sell their handmade products.
+# 🎨 Artisana - Handmade Goods Marketplace
 
-Key Features
-User Roles
-👨‍💼 Admin Panel - Full control over products & users (admindashboard.php, adminlogin.php)
+A complete e-commerce platform designed for artisans to showcase and sell their handmade products.
 
-✨ Artisan Portal - Manage products & profile (artisandashboard.php, addproduct.php, artisan_details.php)
+---
 
-🛍️ Customer Experience - Browse, cart & checkout (home.html, category.php, cart.php)
+## 🔑 Key Features
 
-Core Functionality
-📦 Product Management
+### 👥 User Roles
+- **👨‍💼 Admin Panel** – Full control over users and products  
+  *Files:* `admindashboard.php`, `adminlogin.php`
 
-Add/edit/delete products (addproduct.php, edit_product.php, delete_product.php)
+- **✨ Artisan Portal** – Manage artisan profile and their products  
+  *Files:* `artisandashboard.php`, `addproduct.php`, `artisan_details.php`
 
-Category browsing (category.php, productlisting.php)
+- **🛍️ Customer Experience** – Seamless browsing, cart, and checkout  
+  *Files:* `home.html`, `category.php`, `cart.php`
 
-Detailed product views (product_details.php)
+---
 
-🛒 Shopping System
+## ⚙️ Core Functionality
 
-Cart operations (add_to_cart.php, remove_from_cart.php, view_cart.php)
+### 📦 Product Management
+- Add, edit, delete products  
+  *Files:* `addproduct.php`, `edit_product.php`, `delete_product.php`
 
-Quantity selection (select_quantity.php)
+- Browse by categories  
+  *Files:* `category.php`, `productlisting.php`
 
-Checkout flow (checkout.php, place_order.php, confirm_order.php)
+- View detailed product pages  
+  *File:* `product_details.php`
 
-🔐 User Authentication
+---
 
-Role-based access (select_role.php, redirect_role.php)
+### 🛒 Shopping System
+- Cart management  
+  *Files:* `add_to_cart.php`, `remove_from_cart.php`, `view_cart.php`
 
-Secure login/logout (login.php, logout.php)
+- Select quantities  
+  *File:* `select_quantity.php`
 
-Registration system (signup.php)
+- Full checkout flow  
+  *Files:* `checkout.php`, `place_order.php`, `confirm_order.php`
 
-Technical Stack
-🖥️ Frontend: HTML5, CSS3, JavaScript
-⚙️ Backend: PHP
-🗃️ Database: MySQL (via config.php)
+---
 
-Setup Guide
-Clone repository
+### 🔐 User Authentication
+- Role-based redirection  
+  *Files:* `select_role.php`, `redirect_role.php`
 
-Import database schema (handmade_shop.sql)
+- Secure login/logout  
+  *Files:* `login.php`, `logout.php`
 
-Configure database in config.php
+- User registration  
+  *File:* `signup.php`
 
-Deploy to PHP-enabled server
+---
 
+## 🧱 Technical Stack
+
+- 🖥️ **Frontend:** HTML5, CSS3, JavaScript  
+- ⚙️ **Backend:** PHP  
+- 🗃️ **Database:** MySQL (`config.php`)
+
+---
 ```
-📁 Project Structure
-├── admin/               # Admin controls
+artisan-marketplace/
+├── admin/               # Admin control panel
 ├── artisans/            # Artisan portal  
 ├── cart/                # Shopping cart system
-├── config/              # Database configuration
-├── images/              # Product images
+├── config/              # DB connection settings
+├── images/              # All media assets
 │   ├── artisans/        # Artisan photos
-│   └── products/        # Product photos
-└── views/  
-```            
+│   └── products/        # Product images
+├── sql/                 # handmade_shop.sql schema
+└── views/               # Public-facing pages
+```
