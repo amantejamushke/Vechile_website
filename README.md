@@ -1,77 +1,88 @@
-# 🎨 Artisana - Handmade Goods Marketplace
+# ♻️ eWaste Management System
 
-A complete e-commerce platform designed for artisans to showcase and sell their handmade products.
-
----
-
-## 🔑 Key Features
-
-### 👥 User Roles
-- **👨‍💼 Admin Panel** – Full control over users and products  
-  *Files:* `admindashboard.php`, `adminlogin.php`
-
-- **✨ Artisan Portal** – Manage artisan profile and their products  
-  *Files:* `artisandashboard.php`, `addproduct.php`, `artisan_details.php`
-
-- **🛍️ Customer Experience** – Seamless browsing, cart, and checkout  
-  *Files:* `home.html`, `category.php`, `cart.php`
+A digital platform built to streamline the collection, awareness, and management of electronic waste. The system supports multiple roles—Admin, Collector, and User—to ensure eco-friendly disposal through an intuitive web interface.
 
 ---
 
-## ⚙️ Core Functionality
+## 📌 Project Overview
 
-### 📦 Product Management
-- Add, edit, delete products  
-  *Files:* `addproduct.php`, `edit_product.php`, `delete_product.php`
-
-- Browse by categories  
-  *Files:* `category.php`, `productlisting.php`
-
-- View detailed product pages  
-  *File:* `product_details.php`
+This system allows users to schedule e-waste pickups, take awareness quizzes, and view educational content. Collectors manage pickup requests, and Admins oversee all activities, content, and users.
 
 ---
 
-### 🛒 Shopping System
-- Cart management  
-  *Files:* `add_to_cart.php`, `remove_from_cart.php`, `view_cart.php`
+## 👤 User Roles & Features
 
-- Select quantities  
-  *File:* `select_quantity.php`
+### 🧑‍💼 Admin (`admin_dashboard.php`)
+- View and manage registered users and collectors.
+- Oversee pickup requests and performance statistics.
+- Add awareness materials and quizzes.
 
-- Full checkout flow  
-  *Files:* `checkout.php`, `place_order.php`, `confirm_order.php`
+### 🚛 Collector (`collector_dashboard.php`)
+- View assigned pickups and their details.
+- Mark pickups as completed (`pickup_confirm.php`).
+- Update personal info (`collector_details.php`).
 
----
-
-### 🔐 User Authentication
-- Role-based redirection  
-  *Files:* `select_role.php`, `redirect_role.php`
-
-- Secure login/logout  
-  *Files:* `login.php`, `logout.php`
-
-- User registration  
-  *File:* `signup.php`
+### 👤 User (`user_dashboard.php`)
+- Schedule e-waste pickup requests.
+- Track past pickups and status.
+- Access eco-awareness articles (`awareness.php`) and take quizzes (`quiz.php`).
 
 ---
 
-## 🧱 Technical Stack
+## 🧠 Core Functionality
 
-- 🖥️ **Frontend:** HTML5, CSS3, JavaScript  
-- ⚙️ **Backend:** PHP  
-- 🗃️ **Database:** MySQL (`config.php`)
+- **Authentication System**
+  - Register/Login with role-based redirection (`login.php`, `register.php`).
+  - Secure logout (`logout.php`).
+
+- **Pickup Management**
+  - Users schedule pickups.
+  - Collectors confirm and update status.
+
+- **Awareness & Education**
+  - Informative eco-articles.
+  - Interactive quiz to test environmental awareness.
+
+- **Dashboards**
+  - Role-based dashboards showing personalized actions and metrics.
 
 ---
+
+## 🗃️ Project Structure
+
 ```
-artisan-marketplace/
-├── admin/               # Admin control panel
-├── artisans/            # Artisan portal  
-├── cart/                # Shopping cart system
-├── config/              # DB connection settings
-├── images/              # All media assets
-│   ├── artisans/        # Artisan photos
-│   └── products/        # Product images
-├── sql/                 # handmade_shop.sql schema
-└── views/               # Public-facing pages
+htdocs/
+└── ewaste/
+├── admin_dashboard.php
+├── awareness.php
+├── collector_dashboard.php
+├── collector_details.php
+├── db_connect.php
+├── header.php
+├── index.php
+├── login.php
+├── logout.php
+├── pickup_confirm.php
+├── quiz.php, quiz.js
+├── register.php
+├── tailwind.css
+├── user_dashboard.php
+├── includes/
+├── eco.png (banner image)
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer      | Technology        |
+|------------|-------------------|
+| Frontend   | HTML5, CSS3, JavaScript |
+| Backend    | PHP               |
+| Styling    | Tailwind CSS      |
+| Database   | MySQL             |
+| Server     | XAMPP (Apache + MySQL) |
+
+---
+
+
