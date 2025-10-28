@@ -1,33 +1,61 @@
-PolicyPitStop — Car Rental & Insurance Finder
+# 🚗 PolicyPitStop  
+### *Smart Choices. Secure Rides.*  
 
-Smart choices, secure rides. PolicyPitStop helps users explore cars for rent, list their own car, return a rented car, and compare insurance plans—fast, clear, and mobile-friendly.
+> **A complete car rental and insurance comparison web application** built with HTML, CSS, Bootstrap, PHP, and MySQL — helping users rent cars, compare insurance plans, and list their own vehicles with ease.
 
-Frontend: Bootstrap 5 + Font Awesome
-Backend: PHP (+ MySQL for persistence)
-Status: 🚧 MVP / Work-in-progress
+---
 
-✨ Features
+## 🌟 Overview  
+**PolicyPitStop** simplifies car rentals and insurance selection.  
+Users can:  
+- Rent or return cars online  
+- Compare multiple insurance options  
+- List their own cars for rent  
+- Manage and explore available vehicles effortlessly  
 
-Landing Page (Home) with hero CTA and service cards
+This project focuses on a **modern design**, **mobile responsiveness**, and **seamless user experience**.
 
-Compare Insurance (static page / can be wired to API later)
+---
 
-Car Collection (display.php) to browse available vehicles
+## 🖼️ Preview  
 
-Rent a Car (rent.html)
+![Landing Page Screenshot](https://via.placeholder.com/900x400?text=Landing+Page+Preview)  
+*(Add your own project screenshots here — home page, insurance page, car listings, etc.)*
 
-Return a Car (return.html)
+---
 
-List Your Car (addcar.html)
+## 🧩 Features  
 
-Responsive UI with Bootstrap 5 and Font Awesome icons
+✅ **Home Page:**  
+Beautiful hero section with tagline and quick navigation cards.  
 
-Carousel banners and info sections (Why Choose Us, footer links)
+✅ **Compare Insurance:**  
+Explore different vehicle insurance options instantly.  
 
-🏗️ Tech Stack
+✅ **Car Collection:**  
+View all available cars (dynamic PHP table from MySQL).  
 
-Frontend: HTML5, CSS3, Bootstrap 5.3, Font Awesome
+✅ **Rent & Return Cars:**  
+Easily rent or return cars with smooth navigation and confirmation messages.  
 
-Backend: PHP 8+ (or 7.4+), MySQL/MariaDB
+✅ **List Your Car:**  
+Allow users to post their cars for rent.  
 
-Runtime/Local dev: XAMPP / WAMP / MAMP or PHP built-in server
+✅ **Responsive UI:**  
+Built with **Bootstrap 5** and **Font Awesome 6** for icons and consistent layout.  
+
+---
+
+## 🧱 Tech Stack  
+
+| Layer | Technologies Used |
+|-------|--------------------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, Font Awesome |
+| **Backend** | PHP 8+, MySQL |
+| **Server / Hosting** | XAMPP / WAMP / MAMP, Apache |
+| **Version Control** | Git + GitHub |
+
+---
+
+## 📁 Folder Structure  
+
