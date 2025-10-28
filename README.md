@@ -57,5 +57,4 @@ Built with **Bootstrap 5** and **Font Awesome 6** for icons and consistent layou
 
 ---
 
-## 📁 Folder Structure  
 
