@@ -1,88 +1,33 @@
-# ♻️ eWaste Management System
+PolicyPitStop — Car Rental & Insurance Finder
 
-A digital platform built to streamline the collection, awareness, and management of electronic waste. The system supports multiple roles—Admin, Collector, and User—to ensure eco-friendly disposal through an intuitive web interface.
+Smart choices, secure rides. PolicyPitStop helps users explore cars for rent, list their own car, return a rented car, and compare insurance plans—fast, clear, and mobile-friendly.
 
----
+Frontend: Bootstrap 5 + Font Awesome
+Backend: PHP (+ MySQL for persistence)
+Status: 🚧 MVP / Work-in-progress
 
-## 📌 Project Overview
+✨ Features
 
-This system allows users to schedule e-waste pickups, take awareness quizzes, and view educational content. Collectors manage pickup requests, and Admins oversee all activities, content, and users.
+Landing Page (Home) with hero CTA and service cards
 
----
+Compare Insurance (static page / can be wired to API later)
 
-## 👤 User Roles & Features
+Car Collection (display.php) to browse available vehicles
 
-### 🧑‍💼 Admin (`admin_dashboard.php`)
-- View and manage registered users and collectors.
-- Oversee pickup requests and performance statistics.
-- Add awareness materials and quizzes.
+Rent a Car (rent.html)
 
-### 🚛 Collector (`collector_dashboard.php`)
-- View assigned pickups and their details.
-- Mark pickups as completed (`pickup_confirm.php`).
-- Update personal info (`collector_details.php`).
+Return a Car (return.html)
 
-### 👤 User (`user_dashboard.php`)
-- Schedule e-waste pickup requests.
-- Track past pickups and status.
-- Access eco-awareness articles (`awareness.php`) and take quizzes (`quiz.php`).
+List Your Car (addcar.html)
 
----
+Responsive UI with Bootstrap 5 and Font Awesome icons
 
-## 🧠 Core Functionality
+Carousel banners and info sections (Why Choose Us, footer links)
 
-- **Authentication System**
-  - Register/Login with role-based redirection (`login.php`, `register.php`).
-  - Secure logout (`logout.php`).
+🏗️ Tech Stack
 
-- **Pickup Management**
-  - Users schedule pickups.
-  - Collectors confirm and update status.
+Frontend: HTML5, CSS3, Bootstrap 5.3, Font Awesome
 
-- **Awareness & Education**
-  - Informative eco-articles.
-  - Interactive quiz to test environmental awareness.
+Backend: PHP 8+ (or 7.4+), MySQL/MariaDB
 
-- **Dashboards**
-  - Role-based dashboards showing personalized actions and metrics.
-
----
-
-## 🗃️ Project Structure
-
-```
-htdocs/
-└── ewaste/
-├── admin_dashboard.php
-├── awareness.php
-├── collector_dashboard.php
-├── collector_details.php
-├── db_connect.php
-├── header.php
-├── index.php
-├── login.php
-├── logout.php
-├── pickup_confirm.php
-├── quiz.php, quiz.js
-├── register.php
-├── tailwind.css
-├── user_dashboard.php
-├── includes/
-├── eco.png (banner image)
-```
-
----
-
-## 🛠️ Tech Stack
-
-| Layer      | Technology        |
-|------------|-------------------|
-| Frontend   | HTML5, CSS3, JavaScript |
-| Backend    | PHP               |
-| Styling    | Tailwind CSS      |
-| Database   | MySQL             |
-| Server     | XAMPP (Apache + MySQL) |
-
----
-
-
+Runtime/Local dev: XAMPP / WAMP / MAMP or PHP built-in server
